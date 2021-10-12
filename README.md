@@ -29,4 +29,4 @@ Test de desarrollo
 * [Consultas](https://github.com/hu2g/testElCamioncito/blob/main/ScriptsBD/consultas.sql)
     
 ## Demo CRUD
-* Video
+* [Video](https://drive.google.com/drive/folders/1nWpU1SjEXJ0wrYKlJ8bnpU0R4R5bQtt0?usp=sharing)
