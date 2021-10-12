@@ -1,0 +1,53 @@
+﻿@model IEnumerable<VehiculoModel>
+
+    @{
+    ViewData["Title"] = "Vehiculos";
+    }
+
+    <h1>Vehiculos</h1>
+
+    <p>
+        <a asp-action="Agregar">Crear nuevo</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.id_vehiculo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.capacidad)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.consumo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.depreciacion)
+                </th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.id_vehiculo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.capacidad)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.consumo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.depreciacion)
+                </td>
+                <td>
+                    <a href="@Url.Action("Modificar","Home", new { id = item.id_vehiculo, capa= item.capacidad, cons = item.consumo, depr = item.depreciacion })" class="btn  btn-success right">Editar</a>
+                    <a href="@Url.Action("deleteVehiculo","Home", new { id_vehiculo = item.id_vehiculo })" class="btn  btn-danger right">Eliminar</a>
+
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>

@@ -1,0 +1,33 @@
+﻿@model VehiculoModel
+@{
+    ViewData["Title"] = "Modificar";
+}
+
+<h1>Modificar Vehiculo</h1>
+
+<div id="login-div">
+    <ul class="pagination justify-content-center" style="margin:20px 0">
+        <div class="container">
+            @using (Html.BeginForm("updateVehiculo", "Home", FormMethod.Post))
+            {
+                <div class="form-group">
+                    <label for="Id">Id:</label>
+                    <input type="number" class="form-control" name=id id="id" placeholder="id" value=@Model.id_vehiculo>
+                </div>
+                <div class="form-group">
+                    <label for="Capacidad">Capacidad:</label>
+                    <input type="number" class="form-control" name=capacidad id="capacidad" placeholder="ingresar la capacidad" value=@Model.capacidad>
+                </div>
+                <div class="form-group">
+                    <label for="Consumo">Consumo:</label>
+                    <input type="number" class="form-control" name=consumo id="consumo" placeholder="ingresar el consumo" value=@Model.consumo>
+                </div>
+                <div class="form-group">
+                    <label for="Depreciacion">Depreciacion:</label>
+                    <input type="number" class="form-control" name=depreciacion id="depreciacion" placeholder="ingresar la depreciacion" value=@Model.depreciacion>
+                </div>
+                <input id="btn" name="btn" type="submit" value="Modificar" class="btn btn-success" />
+            }
+        </div>
+    </ul>
+</div>
