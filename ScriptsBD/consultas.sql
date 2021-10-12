@@ -1,3 +1,5 @@
+
+-- CONSULTA A
 -- Obtener el listado de clientes que han utilizado los servicios de transporte al menos en una ocasión 
 -- en los departamentos de El Progreso y Zacapa, pero que no han transportado productos refrigerados. 
 -- Los datos que debe visualizar Nit, Nombre y datos de contacto.

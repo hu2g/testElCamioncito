@@ -1,7 +1,7 @@
 # Test De Desarrollo "ElCamioncito"
 Test de desarrollo
 
-## Serie 1
+## Serie I
 
 * [Propuesta de Solución](https://github.com/hu2g/testElCamioncito/blob/main/Serie1.pdf)
 
@@ -9,3 +9,24 @@ Test de desarrollo
 
 * [Diseño de la base de datos](https://github.com/hu2g/testElCamioncito/blob/main/ModeloFisico.png)
 
+## Serie II
+
+* Base de datos
+
+    + [Script de la Base de datos](https://github.com/hu2g/testElCamioncito/blob/main/ScriptsBD/bs.sql)
+    + [Procedimientos almacenados](https://github.com/hu2g/testElCamioncito/blob/main/ScriptsBD/storeProcedure.sql)
+
+* Web API:  
+    + [Codigo de la solución](https://github.com/hu2g/testElCamioncito/tree/main/CodigoFuente/Api/Api)
+    + [Controlador Principal](https://github.com/hu2g/testElCamioncito/blob/main/CodigoFuente/Api/Api/Controllers/VehiculoController.cs)
+
+* Web Application: Aplicacion MVC 
+    + [Codigo de la solución](https://github.com/hu2g/testElCamioncito/tree/main/CodigoFuente/Api/Cliente)
+    + [Controlador Principal](https://github.com/hu2g/testElCamioncito/blob/main/CodigoFuente/Api/Cliente/Controllers/HomeController.cs)
+
+## Serie III
+
+* [Consultas](https://github.com/hu2g/testElCamioncito/blob/main/ScriptsBD/consultas.sql)
+    
+## Demo CRUD
+* Video
